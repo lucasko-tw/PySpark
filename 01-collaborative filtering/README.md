@@ -33,6 +33,11 @@ predictions = sorted(model.transform(test).collect(), key=lambda r: r[0])
 ```
 
 ### Show predictions
+```python
+for p in predictions:
+  print p
+
+```
 ```
 Row(user=0, item=2, prediction=-0.13807615637779236)
 Row(user=1, item=0, prediction=2.6258413791656494)
