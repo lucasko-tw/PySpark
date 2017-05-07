@@ -45,3 +45,19 @@ reload environment variable
 ```sh
 source ~/.bashrc
 ```
+
+
+Details
+========================
+### Run Pyspark
+Method-1 : run by python
+```sh
+python SparkEgine.py
+```
+
+Method-2 : submit code to mesos
+(Please check mesos has been ran.)
+```sh
+./spark-submit --master mesos://127.0.0.1:5050 ~/Desktop/SparkEgine.py
+```
+
